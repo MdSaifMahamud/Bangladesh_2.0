@@ -82,5 +82,38 @@
     width: 600px;
     /* height: 200px; */
 }
+.piller{
+    padding: 48px 5%;
+}
+.piller .piller-title{
+    margin: 32px 0px;
+    color: rgb(14, 14, 14);
+    font-family: Fira Sans;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.piller-all-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    /* box-sizing: border-box; */
+    /* border: 1px solid rgba(14, 14, 14, 0.15); */
+    /* border-radius: 16px;
+    background: rgb(255, 255, 255); */
+}
+.piller-card{
+    padding: 48px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    text-align: center;
+    background-color: white;
+}
+.piller-card img {
+    width: 48px;
+    margin-bottom: 32px;
+}
 
 
