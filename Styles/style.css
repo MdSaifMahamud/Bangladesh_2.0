@@ -1,9 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 .heading{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
 }
+.bang{
+    color: rgb(14, 14, 14);
+    font-family: Fira Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 10px;
+}
+.sign-in{
+    padding: 0.5rem 1rem;
+    border: 1px solid #008374;
+    border-radius: 4px;
+    color: #008374;
+    text-decoration: none;
+}
+
+.banner{
+    background-color: #E8F4F3;
+    padding: 2px 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 64;
+    padding: 80px 100px 80px 100px;
+    align-items: center;
+    /* justify-content: space-between; */
+    min-height: 400px;
+}
+.banner-content{
+    flex: 1;
+    padding-right: 32px;
+    margin-top: 2px;
+}
+.banner-content .subtitle{
+    color: rgba(14, 14, 14, 0.5);
+    font-family: Fira Sans;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.banner-content .title{
+    color: rgb(14, 14, 14);
+    font-family: Fira Sans;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 16px 0px;
+}
+.explore-btn{
+    margin-top: 2px;
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #008374;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 32px;
+    background-color: #008374;
+}
+.banner-image{
+    width: 600px;
+    /* height: 200px; */
+}
+
+
