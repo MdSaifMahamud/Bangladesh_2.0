@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangladesh 2.0</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        header {
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .sign-in {
+            padding: 0.5rem 1rem;
+            border: 1px solid #008374;
+            border-radius: 4px;
+            color: #008374;
+            text-decoration: none;
+        }
+
+        /* Banner Section */
+        .banner {
+            background-color: #E8F4F3;
+            padding: 4rem 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 400px;
+        }
+
+        .banner-content {
+            flex: 1;
+            padding-right: 2rem;
+        }
+
+        .banner-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .banner-image {
+            flex: 1;
+            text-align: right;
+        }
+
+        .explore-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: #008374;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+
+        /* Pillars Section */
+        .pillars {
+            padding: 4rem 5%;
+        }
+
+        .pillars h2 {
+            margin-bottom: 2rem;
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        .pillar-card {
+            padding: 1.5rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .pillar-card img {
+            width: 48px;
+            margin-bottom: 1rem;
+        }
+
+        /* Vision Section */
+        .vision {
+            padding: 4rem 5%;
+            background-color: #f8f9fa;
+        }
+
+        .vision h2 {
+            margin-bottom: 1rem;
+        }
+
+        .vision p {
+            margin-bottom: 2rem;
+            color: #666;
+        }
+
+        .vision-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .vision-card {
+            padding: 2rem;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .vision-card:nth-child(1) {
+            background-color: #E8F4F3;
+        }
+
+        .vision-card:nth-child(2) {
+            background-color: #E8F4E3;
+        }
+
+        .vision-card:nth-child(3) {
+            background-color: #F4E8E3;
+        }
+
+        .vision-card img {
+            width: 48px;
+            margin-bottom: 1rem;
+        }
+
+        .vision-card button {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        /* News Section */
+        .news {
+            padding: 4rem 5%;
+        }
+
+        .news-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .news-image {
+            flex: 1;
+        }
+
+        .news-content {
+            flex: 2;
+            padding: 2rem;
+        }
+
+        .news-meta {
+            display: flex;
+            align-items: center;
+            margin: 1rem 0;
+        }
+
+        .news-meta img {
+            width: 24px;
+            margin-right: 0.5rem;
+        }
+
+        /* Donate Section */
+        .donate {
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        .donate h2 {
+            margin-bottom: 1rem;
+        }
+
+        .donate p {
+            margin-bottom: 2rem;
+            color: #666;
+        }
+
+        .donate-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .donate-card {
+            padding: 1.5rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .donate-card:hover {
+            background-color: #E8F4F3;
+        }
+
+        .donate input {
+            width: 100%;
+            max-width: 400px;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        /* Newsletter Section */
+        .newsletter {
+            padding: 4rem 5%;
+            background-color: #E8F4F3;
+            text-align: center;
+        }
+
+        .newsletter h2 {
+            margin-bottom: 1rem;
+        }
+
+        .newsletter p {
+            margin-bottom: 2rem;
+            color: #666;
+        }
+
+        .newsletter form {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .newsletter input {
+            flex: 1;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .newsletter button {
+            padding: 0.8rem 1.5rem;
+            background-color: #008374;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            padding: 2rem 5%;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            margin: 0 0.5rem;
+            color: #666;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Bangladesh 2.0</div>
+        <a href="#" class="sign-in">Sign In</a>
+    </header>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Idea, innovation, vision and challenges in New Bangladesh.</h1>
+            <a href="#" class="explore-btn">Explore New Bangladesh</a>
+        </div>
+        <div class="banner-image">
+            <!-- Add your banner image here -->
+        </div>
+    </section>
+
+    <section class="pillars">
+        <h2>Pillars of "Bangladesh 2.0"</h2>
+        <div class="pillars-grid">
+            <div class="pillar-card">
+                <img src="path-to-icon" alt="Innovation">
+                <h3>Innovation</h3>
+                <p>Build up and strengthen all...</p>
+            </div>
+            <!-- Repeat for other pillars -->
+        </div>
+    </section>
+
+    <section class="vision">
+        <h2>The Vision of Future</h2>
+        <p>Bangladesh 2.0 aims to establish the nation's trajectory by embracing cutting-edge technology, promoting inclusive growth, and ensuring sustainability.</p>
+        <div class="vision-grid">
+            <div class="vision-card">
+                <img src="path-to-icon" alt="Digital Transformation">
+                <h3>Digital Transformation</h3>
+                <p>Creating a sustainable digital ecosystem...</p>
+                <button style="background-color: #008374;">Learn More</button>
+            </div>
+            <!-- Repeat for other vision cards -->
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="news-card">
+            <div class="news-image">
+                <!-- Add news image -->
+            </div>
+            <div class="news-content">
+                <h3>Bangladesh Launches New Satellite</h3>
+                <div class="news-meta">
+                    <img src="path-to-aljazeera-logo" alt="Aljazeera">
+                    <span>2 hours ago</span>
+                </div>
+                <p>Bangladesh has successfully launched...</p>
+                <button class="explore-btn">Read More</button>
+            </div>
+        </div>
+        <!-- Repeat for other news cards -->
+    </section>
+
+    <section class="donate">
+        <h2>Donate Today</h2>
+        <p>Support the future of Bangladesh</p>
+        <div class="donate-grid">
+            <div class="donate-card">
+                <h3>100 Taka</h3>
+            </div>
+            <!-- Repeat for other donation amounts -->
+        </div>
+        <input type="number" placeholder="Other Amount (Taka)">
+        <button class="explore-btn">Donate Now</button>
+    </section>
+
+    <section class="newsletter">
+        <h2>Subscribe Newsletter</h2>
+        <p>Stay updated on our progress</p>
+        <form>
+            <input type="email" placeholder="Your email address">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="logo">Bangladesh 2.0</div>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
