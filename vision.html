@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision of Future - Bangladesh 2.0</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .vision-section {
+            padding: 60px 120px;
+            background-color: #fff;
+        }
+
+        .vision-section h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .vision-description {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            max-width: 1200px;
+        }
+
+        .vision-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            max-width: 1200px;
+        }
+
+        .vision-card {
+            padding: 32px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .vision-card:nth-child(1) {
+            background-color: #EEF5FF;
+        }
+
+        .vision-card:nth-child(2) {
+            background-color: #E8F4F0;
+        }
+
+        .vision-card:nth-child(3) {
+            background-color: #FFF8EE;
+        }
+
+        .icon {
+            width: 48px;
+            height: 48px;
+        }
+
+        .vision-card h3 {
+            font-size: 20px;
+            color: #000;
+            margin: 8px 0;
+        }
+
+        .vision-card p {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+
+        .learn-more {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            width: fit-content;
+        }
+
+        .vision-card:nth-child(1) .learn-more {
+            background-color: #4681f4;
+        }
+
+        .vision-card:nth-child(2) .learn-more {
+            background-color: #00A551;
+        }
+
+        .vision-card:nth-child(3) .learn-more {
+            background-color: #FFB800;
+        }
+    </style>
+</head>
+<body>
+    <div class="vision-section">
+        <h1>The Vision of Future</h1>
+        <p class="vision-description">
+            Bangladesh 2.0 aims to redefine the nation's trajectory by embracing cutting-edge technology, promoting inclusive growth, and ensuring sustainability. With initiatives in renewable energy, digital transformation, and robust infrastructure, the country is set to become a global model of development.
+        </p>
+        <div class="vision-cards">
+            <div class="vision-card">
+                <svg class="icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="#4681f4" stroke-width="2"/>
+                    <path d="M17 24h14M24 17v14" stroke="#4681f4" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <h3>Digital Transformation</h3>
+                <p>Creating a nationwide digital ecosystem to enhance connectivity and access to services for all citizens.</p>
+                <button class="learn-more">Learn More</button>
+            </div>
+
+            <div class="vision-card">
+                <svg class="icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="#00A551" stroke-width="2"/>
+                    <path d="M17 24h14M24 17v14" stroke="#00A551" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <h3>Green Energy</h3>
+                <p>Investments in solar and wind energy to ensure a sustainable and eco-friendly future.</p>
+                <button class="learn-more">Learn More</button>
+            </div>
+
+            <div class="vision-card">
+                <svg class="icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="#FFB800" stroke-width="2"/>
+                    <path d="M17 24h14M24 17v14" stroke="#FFB800" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <h3>Modern Infrastructure</h3>
+                <p>Building state-of-the-art infrastructure to support economic growth and global competitiveness.</p>
+                <button class="learn-more">Learn More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

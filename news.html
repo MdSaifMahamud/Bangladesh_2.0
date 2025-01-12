@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent News - Bangladesh 2.0</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .news-section {
+            padding: 60px 120px;
+            background-color: #F8F9FA;
+        }
+
+        .news-section h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .news-description {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            max-width: 1200px;
+        }
+
+        .news-card {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            display: flex;
+            gap: 32px;
+            align-items: center;
+            margin-bottom: 32px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .news-card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .news-image {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .news-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        .news-content {
+            flex: 1;
+        }
+
+        .news-content h2 {
+            font-size: 28px;
+            margin-bottom: 16px;
+            color: #333;
+        }
+
+        .news-source {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .news-source img {
+            height: 24px;
+        }
+
+        .news-time {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .news-text {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .read-more {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #00844A;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .read-more:hover {
+            background-color: #006A3B;
+        }
+
+        @media (max-width: 768px) {
+            .news-section {
+                padding: 40px 20px;
+            }
+
+            .news-card {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .news-card:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .news-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="news-section">
+        <h1>Recent News</h1>
+        <p class="news-description">
+            Bangladesh 2.0 aims to redefine the nation's trajectory by embracing cutting-edge technology, promoting inclusive growth, and ensuring sustainability. With initiatives in renewable energy, digital transformation, and robust infrastructure, the country is set to become a global model of development.
+        </p>
+        
+        <div class="news-card">
+            <div class="news-image">
+                <img src="path_to_satellite_image.jpg" alt="Bangladesh Satellite">
+            </div>
+            <div class="news-content">
+                <h2>Bangladesh Launches New Satellite</h2>
+                <div class="news-source">
+                    <img src="path_to_aljazeera_logo.png" alt="Aljazeera">
+                    <div class="news-time">
+                        Date: 05/01/2025   Time: 10.25 PM
+                    </div>
+                </div>
+                <p class="news-text">
+                    Not until the creation and maintenance of decent conditions of life for all people are recognized and accepted as a common obligation of all people and all countries—not until then shall we, with a certain degree of justification, be able to speak of humankind as civilized
+                </p>
+                <button class="read-more">Read More</button>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <div class="news-image">
+                <img src="path_to_satellite_image.jpg" alt="Bangladesh Satellite">
+            </div>
+            <div class="news-content">
+                <h2>Bangladesh Launches New Satellite</h2>
+                <div class="news-source">
+                    <img src="path_to_aljazeera_logo.png" alt="Aljazeera">
+                    <div class="news-time">
+                        Date: 05/01/2025   Time: 10.25 PM
+                    </div>
+                </div>
+                <p class="news-text">
+                    Not until the creation and maintenance of decent conditions of life for all people are recognized and accepted as a common obligation of all people and all countries—not until then shall we, with a certain degree of justification, be able to speak of humankind as civilized
+                </p>
+                <button class="read-more">Read More</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

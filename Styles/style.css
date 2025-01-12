@@ -84,6 +84,7 @@
 }
 .piller{
     padding: 48px 5%;
+    background-color: antiquewhite;
 }
 .piller .piller-title{
     margin: 32px 0px;
@@ -101,19 +102,225 @@
     gap: 40px;
     /* box-sizing: border-box; */
     /* border: 1px solid rgba(14, 14, 14, 0.15); */
-    /* border-radius: 16px;
-    background: rgb(255, 255, 255); */
+    border-radius: 16px;
+    background: rgb(255, 255, 255); 
+    margin: 0px;
 }
 .piller-card{
+    margin-right: 20px;
     padding: 48px;
     border: 1px solid #eee;
     border-radius: 12px;
     text-align: center;
     background-color: white;
+    gap: 20px;
 }
 .piller-card img {
     width: 48px;
     margin-bottom: 32px;
 }
 
+.vision-section {
+    padding: 60px 120px;
+    background-color: #fff;
+}
+
+.vision-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.vision-description {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 1200px;
+}
+
+.vision-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+}
+
+.vision-card {
+    padding: 32px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.vision-card:nth-child(1) {
+    background-color: #EEF5FF;
+}
+
+.vision-card:nth-child(2) {
+    background-color: #E8F4F0;
+}
+
+.vision-card:nth-child(3) {
+    background-color: #FFF8EE;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+}
+
+.vision-card h3 {
+    font-size: 20px;
+    color: #000;
+    margin: 8px 0;
+}
+
+.vision-card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.learn-more {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.vision-card:nth-child(1) .learn-more {
+    background-color: #4681f4;
+}
+
+.vision-card:nth-child(2) .learn-more {
+    background-color: #00A551;
+}
+
+.vision-card:nth-child(3) .learn-more {
+    background-color: #FFB800;
+}
+
+.jami{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    /* display: flex;
+    justify-content: ;
+    align-items: center; */
+    /* height: 100vh; */
+    width: 100%;
+    background-color: #f9f9f9;
+  }
+  
+  .quote-card {
+    max-width: 100%;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .quote {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    position: relative;
+  }
+  
+  .quote-mark {
+    font-size: 40px;
+    color: #999;
+    font-weight: bold;
+    vertical-align: top;
+  }
+  
+  .author {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .designation {
+    font-size: 16px;
+    color: #666;
+  }
+
+  /* cdi */
+
+  .table {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    margin-bottom: 30px;
+  }
+  
+  .opinion-container {
+    width: 80%;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .table h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .opinion-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .opinion-table th {
+    background-color: #d7f0da;
+    color: #333;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .opinion-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+  }
+  
+  .opinion-table tr:hover {
+    background-color: #f4f4f4;
+  }
+  
+  select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: #68c68d;
+  }
+  
+
+  
 
