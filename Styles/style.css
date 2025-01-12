@@ -264,7 +264,7 @@
     justify-content: center;
     align-items: center; */
     height: 100vh;
-    margin-bottom: 30px;
+    margin-bottom: none;
   }
   
   .opinion-container {
@@ -321,6 +321,209 @@
     border-color: #68c68d;
   }
   
+
+  /* cdi */
+  .news-section {
+    padding: 60px 120px;
+    background-color: #F8F9FA;
+}
+
+.news-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.news-description {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 1200px;
+}
+
+.news-card {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-bottom: 32px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.news-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.news-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.news-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.news-content {
+    flex: 1;
+}
+
+.news-content h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.news-source {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.news-source img {
+    height: 24px;
+}
+
+.news-time {
+    color: #666;
+    font-size: 14px;
+}
+
+.news-text {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #00844A;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.read-more:hover {
+    background-color: #006A3B;
+}
+
+/* @media (max-width: 768px) {
+    .news-section {
+        padding: 40px 20px;
+    }
+
+    .news-card {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .news-card:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .news-image {
+        max-width: 100%;
+    }
+} */
+
+.donate-section {
+    padding: 60px 120px;
+    background-color: #F4F4F4;
+    text-align: center;
+}
+
+.donate-section h1 {
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.donate-description {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.amount-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto 32px;
+}
+
+.amount-card {
+    background: white;
+    padding: 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.amount-card h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+/* Selected state for 200 Taka card */
+.amount-card.selected {
+    background-color: #E8F4F0;
+}
+
+.amount-card:hover {
+    background-color: #E8F4F0;
+}
+
+.other-amount {
+    max-width: 1000px;
+    margin: 0 auto 32px;
+}
+
+.other-amount input {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    background: transparent;
+    outline: none;
+}
+
+.other-amount input::placeholder {
+    color: #999;
+}
+
+.donate-button {
+    background-color: #00844A;
+    color: white;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+    background-color: #006A3B;
+}
+
 
   
 
